@@ -7,7 +7,7 @@ module.exports = {
       filename: path.resolve(__dirname, "src", "database", "database.db")
     },
 
-    //funcionalidade para deletar em cascata
+    //funcionalidade para deletar em cascata 
     pool:{
       afterCreate: (conn, cb) => conn.run("PRAGMA foreign_keys = ON", cb)
     },
